@@ -27,7 +27,7 @@ def apply_radial_distortion(image, k1, k2, k3):
     return distorted_image
 
 # Load your selfie image
-selfie_image = cv2.imread('origin.jpg')
+selfie_image = cv2.imread('../origin.jpg')
 
 # Apply barrel distortion (positive coefficients)
 barrel_distorted_image = apply_radial_distortion(selfie_image, k1=0.7, k2=0.2, k3=0.0)

@@ -9,7 +9,7 @@ def scale_image(image, scale_factor, interpolation_method):
     return scaled_image
 
 # Load the selfie image (ensure the size is at least 512x512 pixels)
-image = cv2.imread('origin.jpg')
+image = cv2.imread('../origin.jpg')
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  # Convert to RGB for display in matplotlib
 
 # Scale factors
